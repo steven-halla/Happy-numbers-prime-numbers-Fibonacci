@@ -7,6 +7,8 @@
 // step 6: set a variable to a boolean value this should help to exit our while loop
 // step 7: to get last digit, divide number using mod 10. Use math.floor for first digit. 13 becomes 13 % 10 = 3, and math.floor(13/10) = 1. math.floor  erases decimals
 
+// to square a number, 2 ** 5 is an example, double **
+
 // 13 = 1 + 3 ,with each number squared which equals 1 + 0, which when squared equals 1(happy number)
 
 // function squareNumber(number) {
@@ -44,27 +46,57 @@
 //having issue with 2 being divided by itself
 
 
+//
+// function primeNumber(){
+//   let isPrime=false;
+//   primeNumbersArray = [2];
+//   for(let i = 1; i < 101; i++) {
+//     for( let j = 2; j < i; j++) {
+//       if(i % j === 0 ) {
+//         isPrime = false;
+//         break;
+//       }
+//       else {
+//         isPrime = true;
+//       }
+//     }
+//     if(isPrime === true) {
+//       primeNumbersArray.push(i);
+//     }
+//   }
+//   console.log(primeNumbersArray);
+// }
+//
+// primeNumber();
 
-function primeNumber(){
-  let isPrime=false;
-  primeNumbersArray = [2];
-  for(let i = 1; i < 101; i++) {
-    for( let j = 2; j < i; j++) {
-      if(i % j === 0 ) {
-        isPrime = false;
-        break;
-      }
-      else {
-        isPrime = true;
-      }
-    }
-    if(isPrime === true) {
-      primeNumbersArray.push(i);
-    }
-  }
-  console.log(primeNumbersArray);
-}
+//Fibonnacci number which is equal to the two numbers that proceed it
 
-primeNumber();
+// need to start at 1
+//1,1,2,3,5,8,13,21,34,
 
+// so we always add the current number with what proceeds before it
+//make an array
+//double for loop so that we can compare and add values
+// pass in two parameters,   a start point and an end point
+
+//let make 2 variables, one to hold prev number and one to hold current
+//then we add the two numbers to get next iteration
+
+// function fibonacciNumber(minNumber, maxNumber) {
+//
+//   let prevNumber = 1;
+//   let nextNumber = 1;
+//   let fibNumber = 0;
+//
+//   for (let i = 1; i <= maxNumber; i++){
+//       fibNumber = prevNumber + nextNumber;
+//       console.log(fibNumber);
+//       prevNumber = fibNumber + nextNumber;
+//       console.log(prevNumber)
+//       nextNumber = fibNumber + prevNumber;
+//       console.log(nextNumber);
+//   }
+// }
+//
+// fibonacciNumber(1,3);
 
